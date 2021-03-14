@@ -1,0 +1,39 @@
+<script>
+	var nr1 = prompt("Introduceti primul numar:");
+	var op = prompt("Introduceti operatia dintre numere:");
+	var nr2 = prompt("Introduceti al doilea numar:");
+
+	if(typeof nr1 !== 'undefined' && nr1){
+
+		if(typeof nr2 !== 'undefined' && nr2){
+
+			if(op == "+"){
+				var rez = parseInt(nr1) + parseInt(nr2);
+				alert("Rezulatul este:" + rez);
+			}
+			else if(op == "-"){
+				var rez = parseInt(nr1) - parseInt(nr2);
+				alert("Rezulatul este:" + rez);
+			}
+			else if(op == "*"){
+				var rez = parseInt(nr1) * parseInt(nr2);
+				alert("Rezulatul este:" + rez);
+			}
+			else if(op == "/"){
+				var rez = parseInt(nr1) / parseInt(nr2);
+				alert("Rezulatul este:" + rez);
+			}
+			else{
+				alert("Operatia aleasa nu este una concludenta!");
+			}
+		}
+		
+		else{
+			alert("Al doilea numar nu este setat!")
+		}
+	}
+	else{
+		alert("Primul numar nu este setat!")
+	}
+
+</script>
